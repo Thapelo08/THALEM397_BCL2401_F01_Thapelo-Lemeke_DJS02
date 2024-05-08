@@ -14,6 +14,14 @@ if(!dividend || !divider ) {
   return;
 }
 
+//Error handling: check if inputs contain invalid characters
+const validInputRegex = /^[0-9]+$/;
+if (!validInputRegex.test(dividend) || !validInputRegex.test(divider)) {
+  result.classList.add("critical error");
+  result.innerText("Something critical went wrong, Please reload the page.");
+  return;
+}
+
 });
 
 
