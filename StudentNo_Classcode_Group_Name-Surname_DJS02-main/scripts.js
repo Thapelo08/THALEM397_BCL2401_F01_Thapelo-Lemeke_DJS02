@@ -36,6 +36,9 @@ try {
 } catch (error) {
   console.error("An error occured:", error);
   console.error("call stack:", error.stack);
+
+  // Critical Error Handling
+  result.innerText = "Something critical went wrong. Please reload the page.";
 }
 
 });
