@@ -21,6 +21,12 @@ if (!validInputRegex.test(dividend) || !validInputRegex.test(divider)) {
   result.innerText("Something critical went wrong, Please reload the page.");
   return;
 }
+try {
+  //Force Number conversion
+  const dividendNumber = Number(dividend);
+  const divisorNumber = Number(divider);
+  
+}
 
 });
 
